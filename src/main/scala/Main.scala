@@ -5,11 +5,9 @@ import scala.util.{Success, Failure, Using}
 
 object Main {
   def main(args: Array[String]): Unit = {
-    val filePath = "./a.txt"
-//    val filePath = "/proc/stat"
+    val filePath = "/proc/stat"
     val result = Using(Source.fromFile(filePath)) {
       source => source.getLines().toList
-//      _.getLines().toList
     }
 
     result match {
