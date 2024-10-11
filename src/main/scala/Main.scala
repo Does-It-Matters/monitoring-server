@@ -5,7 +5,7 @@ import scala.util.{Success, Failure, Using}
 
 object Main {
   def main(args: Array[String]): Unit = {
-    val filePath = "/proc/stat"
+    val filePath = FilePath.ProcStat.path
     val result = Using(Source.fromFile(filePath)) {
       source => source.getLines().toList
     }
