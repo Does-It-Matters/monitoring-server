@@ -3,9 +3,11 @@ package monitoring.server
 import scala.io.Source
 import scala.util.{Success, Failure, Using}
 
+import FilePath._
+
 object Main {
   def main(args: Array[String]): Unit = {
-    val filePath = FilePath.ProcStat.path
+    val filePath = ProcStat.toString
     val result = Using(Source.fromFile(filePath)) {
       source => source.getLines().toList
     }
