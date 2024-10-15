@@ -13,4 +13,9 @@ object FilePath extends Enumeration {
    * cpu 데이터 파일 경로
    */
   val ProcStat = Value("/proc/stat")
+
+  /**
+   * memory 사용량 파일 경로
+   */
+  val ProcMeminfo = Value("/proc/meminfo")
 }
