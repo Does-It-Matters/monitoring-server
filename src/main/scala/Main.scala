@@ -1,6 +1,7 @@
 package monitoring.server
 
-import FilePath._
+import file.FilePath._
+import file.FileReader
 
 object Main {
   def main(args: Array[String]): Unit = {

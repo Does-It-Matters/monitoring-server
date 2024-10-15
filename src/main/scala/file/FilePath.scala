@@ -1,4 +1,5 @@
 package monitoring.server
+package file
 
 /**
  * 모니터링하기 위한 리눅스 파일 경로들
